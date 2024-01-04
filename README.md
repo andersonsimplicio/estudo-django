@@ -1,1 +1,1 @@
-### Projeto de Estudo de Djangog
+### Projeto de Estudo de Django
