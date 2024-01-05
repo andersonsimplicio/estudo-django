@@ -33,7 +33,7 @@ A estrutura do projeto é organizada para facilitar o aprendizado progressivo. C
 
 ## Como Iniciar
 
-1. Clone o repositório: `git clone https://github.com/seu-usuario/nome-do-projeto.git`
+1. Clone o repositório: `git clone hhttps://github.com/andersonsimplicio/estudo-django.git`
 2. Crie um ambiente virtual: `python -m venv env`
 3. Ative o ambiente virtual: 
    - No Windows: `env\Scripts\activate`
