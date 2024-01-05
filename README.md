@@ -46,6 +46,6 @@ A estrutura do projeto é organizada para facilitar o aprendizado progressivo. C
 
 Contribuições são bem-vindas! Se você tem sugestões, correções ou novas funcionalidades para adicionar, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-![Imagem Ilustrativa](img/InicioEstudo.png)
+![Imagem Ilustrativa](img/BQDelights.png)
 
 Divirta-se aprendendo Django! 🚀
