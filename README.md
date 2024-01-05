@@ -5,15 +5,8 @@ Bem-vindo ao repositório do projeto de estudos em Django! Este projeto foi cria
 ## Descrição do Projeto
 ### Inspirado em um proposta de trabalho do **workana**:
 
-Portal on line para cadastrar, delegar, monitorar e auditar uma demanda de RH. Um exemplo seriam uma ouvidoria:
-- **1.** O funcionário acessa um link;
-- **2.** O funcionário cadastra sua demanda/denúncia;
-- **3.** O responsável recebe um e-mail avisando da respectiva ouvidoria;
-- **4.** O responsável analisa e encaminha para outro usuário responsável por executar um plano de ação;
-- **5.** Após vencimento do prazo de solução, o sistema avisará o responsável maior;
-- **6.** Após executado o plano de ação, volta o retorno para o gestor do processo, que  por sua vez retorna para o funcionário que gerou a demanda;
-- **7.** O sistema deverá quantificar os indicadores;
-- **8.** O Sistema deverá gerar os respectivos relatórios.
+Portal on line para Publicar Receitas. Um exemplo seriam uma ouvidoria:
+![Imagem Ilustrativa](img/programer.gif)
 
 ## Objetivos de Aprendizado
 
