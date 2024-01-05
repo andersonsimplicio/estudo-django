@@ -3,8 +3,17 @@
 Bem-vindo ao repositório do projeto de estudos em Django! Este projeto foi criado com o objetivo principal de aprimorar habilidades no framework Django, proporcionando uma oportunidade de aprendizado e prática.
 
 ## Descrição do Projeto
+### Inspirado em um proposta de trabalho do **workana**:
 
-Este repositório serve como um espaço centralizado para a exploração e experimentação com os conceitos fundamentais do Django, desde a criação de modelos até o desenvolvimento de aplicações web robustas. Estamos focados em construir um conhecimento sólido e prático, utilizando as melhores práticas recomendadas pelo Django.
+Portal on line para cadastrar, delegar, monitorar e auditar uma demanda de RH. Um exemplo seriam uma ouvidoria:
+**1.**O funcionário acessa um link;
+**2.** O funcionário cadastra sua demanda/denúncia;
+**3.**O responsável recebe um e-mail avisando da respectiva ouvidoria;
+**3.** O responsável analisa e encaminha para outro usuário responsável por executar um plano de ação;
+**4.** Após vencimento do prazo de solução, o sistema avisará o responsável maior;
+**5.** Após executado o plano de ação, volta o retorno para o gestor do processo, que  por sua vez retorna para o funcionário que gerou a demanda;
+**6.** O sistema deverá quantificar os indicadores;
+**7.** O Sistema deverá gerar os respectivos relatórios.
 
 ## Objetivos de Aprendizado
 
