@@ -1,7 +1,10 @@
 # Projeto de Estudos em Django
 
 Bem-vindo ao repositório do projeto de estudos em Django! Este projeto foi criado com o objetivo principal de aprimorar habilidades no framework Django, proporcionando uma oportunidade de aprendizado e prática.
-![Imagem Ilustrativa](img/programer.gif)
+<p align="center">
+  <img src="img/programer.gif" alt="Imagem Ilustrativa">
+</p>
+
 ## Descrição do Projeto
 ### Inspirado em um proposta de trabalho do **workana**:
 
