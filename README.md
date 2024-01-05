@@ -1,12 +1,20 @@
 # Projeto de Estudos em Django
 
 Bem-vindo ao repositório do projeto de estudos em Django! Este projeto foi criado com o objetivo principal de aprimorar habilidades no framework Django, proporcionando uma oportunidade de aprendizado e prática.
-
+![Imagem Ilustrativa](img/programer.gif)
 ## Descrição do Projeto
 ### Inspirado em um proposta de trabalho do **workana**:
 
-Portal on line para Publicar Receitas. Um exemplo seriam uma ouvidoria:
-![Imagem Ilustrativa](img/programer.gif)
+## Portal on line para Publicar Receitas.
+## Funcionalidades Principais
+
+1. **Publicação Simples de Receitas:** Com apenas alguns cliques, você pode compartilhar suas receitas favoritas com a comunidade. Adicione ingredientes, instruções passo a passo e até mesmo imagens para tornar sua receita ainda mais atrativa.
+
+2. **Busca Avançada e Intuitiva:** Encontre facilmente receitas específicas utilizando a funcionalidade de busca avançada. Filtrar por ingredientes, tempo de preparo e tipo de cozinha para descobrir novas opções deliciosas.
+
+3. **Perfil do Usuário Personalizado:** Crie e personalize seu perfil de usuário para exibir suas receitas publicadas, bem como aquelas que você salvou como favoritas. Acompanhe suas contribuições para a comunidade culinária.
+
+4. **Interatividade Através de Comentários e Avaliações:** Participe da comunidade interagindo com outros membros. Deixe comentários e avaliações nas receitas, compartilhe dicas, sugestões de variações e experiências pessoais.
 
 ## Objetivos de Aprendizado
 
