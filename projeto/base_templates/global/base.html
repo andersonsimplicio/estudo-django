@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+{% include 'global/partials/head.html' %}
+{% include 'global/partials/header.html' %}
+{% include 'global/partials/search.html' %}
+
+<title>{% block title %}{% endblock title %} | Receitas</title>
+</head>
+<body>
+<main class="main-content-container">
+    {% block content %} {% endblock content %} 
+</main>
+
+{% include 'global/partials/footer.html' %}
+</body>
+</html>

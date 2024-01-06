@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from .views import home
+from .import views 
 
 
 urlpatterns = [
-    path('',home,name='home'),
+    path('',views.home,name='home'),
+    path('receitas/<int:id>/details',views.recietas,name='receita'),
 ]

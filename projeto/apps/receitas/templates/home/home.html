@@ -1,13 +1,13 @@
-{% include 'global/partials/head.html' %}
-{% include 'global/partials/header.html' %}
-{% include 'global/partials/search.html' %}
+{% extends "global/base.html" %}
 
-<main class="main-content-container">
+
+{% block title %}Home{% endblock title %} 
+
+{% block content %}
     <div class="main-content main-content-list container">
-        {% include 'global/partials/produto.html' %}        
-        {% include 'global/partials/produto.html' %}  
-        {% include 'global/partials/produto.html' %}  
-    </div><!--main-content-->
-</main>
-
-{% include 'global/partials/footer.html' %}
+        {% for produto in  produtos %}
+        {% include 'global/partials/produto.html' %} 
+        {% endfor %}       
+        
+    </div>
+{% endblock content %}
