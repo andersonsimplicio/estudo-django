@@ -19,11 +19,11 @@ Bem-vindo ao repositório do projeto de estudos em Django! Este projeto foi cria
 
 4. **Interatividade Através de Comentários e Avaliações:** Participe da comunidade interagindo com outros membros. Deixe comentários e avaliações nas receitas, compartilhe dicas, sugestões de variações e experiências pessoais.
 
-## Plataforma
 
-# BQ Delights
 
-## Sua Doçura Online ao Alcance de Todos!
+##  Plataforma BQ Delights
+
+#### Sua Doçura Online ao Alcance de Todos!
 
 Explore um catálogo diversificado de doces e bolos, faça encomendas personalizadas, e desfrute de uma experiência deliciosa!
 
