@@ -6,10 +6,10 @@ Bem-vindo ao repositório do projeto de estudos em Django! Este projeto foi cria
 </p>
 
 ## Descrição do Projeto
-### Inspirado em um proposta de trabalho do **workana**:
+Inspirado em um proposta de trabalho do **workana**:
 
 ## Portal on line para Publicar Receitas.
-## Funcionalidades Principais
+#### Funcionalidades Principais
 
 1. **Publicação Simples de Receitas:** Com apenas alguns cliques, você pode compartilhar suas receitas favoritas com a comunidade. Adicione ingredientes, instruções passo a passo e até mesmo imagens para tornar sua receita ainda mais atrativa.
 
@@ -28,7 +28,7 @@ Bem-vindo ao repositório do projeto de estudos em Django! Este projeto foi cria
 Explore um catálogo diversificado de doces e bolos, faça encomendas personalizadas, e desfrute de uma experiência deliciosa!
 
 <p align="center">
-  <img src="img/BQDelights.png" alt="Imagem Ilustrativa">
+  <img src="img/BQDelights.png" style="border-radius: 10px;" alt="Imagem Ilustrativa">
 </p>
 
 ## Objetivos de Aprendizado
