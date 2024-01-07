@@ -13,6 +13,7 @@ fake = Faker('pt_BR')
 
 def make_produto():
     return {
+        'id':fake.random_number(digits=2, fix_len=True),
         'title': fake.sentence(nb_words=4),
         'description': fake.sentence(nb_words=10),
         'preparation_time': fake.random_number(digits=2, fix_len=True),
