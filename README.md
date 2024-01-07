@@ -19,6 +19,18 @@ Bem-vindo ao repositório do projeto de estudos em Django! Este projeto foi cria
 
 4. **Interatividade Através de Comentários e Avaliações:** Participe da comunidade interagindo com outros membros. Deixe comentários e avaliações nas receitas, compartilhe dicas, sugestões de variações e experiências pessoais.
 
+## Plataforma
+
+# BQ Delights
+
+## Sua Doçura Online ao Alcance de Todos!
+
+Explore um catálogo diversificado de doces e bolos, faça encomendas personalizadas, e desfrute de uma experiência deliciosa!
+
+<p align="center">
+  <img src="img/BQDelights.png" alt="Imagem Ilustrativa">
+</p>
+
 ## Objetivos de Aprendizado
 
 Os principais objetivos deste projeto incluem:
@@ -48,9 +60,5 @@ A estrutura do projeto é organizada para facilitar o aprendizado progressivo. C
 ## Contribuições
 
 Contribuições são bem-vindas! Se você tem sugestões, correções ou novas funcionalidades para adicionar, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-<p align="center">
-  <img src="img/BQDelights.png" alt="Imagem Ilustrativa">
-</p>
 
 Divirta-se aprendendo Django! 🚀

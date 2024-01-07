@@ -1,8 +1,9 @@
 <div class="product product-list-item">
     <div class="product-cover">
         <a href="{% url 'apps.receitas:detalhes' id=produto.id %}">
-       {% if is_details %}
-        <img class="product-details-img" src="{{produto.cover.url}}" alt="">
+           
+       {% if is_detalis is True%}
+        <img class="product-details-img" src="{{produto.cover.url}}" style="width: 90rem; height:auto" alt="">
        {% else %}
        <img src="{{produto.cover.url}}" alt="">
        {% endif %}
@@ -17,14 +18,18 @@
         <div class="product-author">
                 <span class="product-author-item">
                     <i class="fa-solid fa-user-astronaut"></i>
-                    {{ produto.author.first_name }} {{ produto.author.last_name }}
+                    {% if produto.author.first_name %}
+                        {{ produto.author.first_name }} {{ produto.author.last_name }}
+                    {% else %}
+                        {{ produto.author.username }}
+                    {% endif %}
                 </span>
                 <span class="product-author-item">
                     <i class="fas fa-calendar-alt"></i>
                     {{ produto.created_at|date:"d/m/Y" }} às {{ produto.created_at|date:"H:i" }}
                 </span>
                 <span class="product-author-item">
-                    <a href="#">
+                    <a href="{% url 'apps.receitas:categorias' id=produto.category.id%}">
                         <i class="fas fa-layer-group"></i>
                         <span>{{produto.category.name}}</span>
                     </a>
