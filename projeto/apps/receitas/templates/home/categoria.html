@@ -1,0 +1,13 @@
+{% extends "global/base.html" %}
+
+
+{% block title %}{{cat_name}}{% endblock title %} 
+
+{% block content %}
+    <div class="main-content main-content-list container">
+        {% for produto in  produtos %}
+        {% include 'global/partials/produto.html' %} 
+        {% endfor %}       
+        
+    </div>
+{% endblock content %}

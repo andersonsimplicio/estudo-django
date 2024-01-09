@@ -16,25 +16,32 @@
             </h2>
         </div>
         <div class="product-author">
+            
                 <span class="product-author-item">
                     <i class="fa-solid fa-user-astronaut"></i>
+                {% if produto.author is not None %}
                     {% if produto.author.first_name %}
                         {{ produto.author.first_name }} {{ produto.author.last_name }}
                     {% else %}
                         {{ produto.author.username }}
                     {% endif %}
+                {% endif %}
                 </span>
+            
                 <span class="product-author-item">
                     <i class="fas fa-calendar-alt"></i>
                     {{ produto.created_at|date:"d/m/Y" }} às {{ produto.created_at|date:"H:i" }}
                 </span>
+                {% if produto.category is not None %}
                 <span class="product-author-item">
+                    
                     <a href="{% url 'apps.receitas:categorias' id=produto.category.id%}">
                         <i class="fas fa-layer-group"></i>
                         <span>{{produto.category.name}}</span>
                     </a>
+                  
                 </span>
-    
+                {% endif %}
                 <div class="product-content">
                     <p>{{produto.description}}</p>
                 </div>               
