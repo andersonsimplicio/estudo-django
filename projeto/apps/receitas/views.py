@@ -1,5 +1,7 @@
+from tkinter.messagebox import NO
+from unicodedata import category
 from xmlrpc.client import Boolean
-from django.shortcuts import render
+from django.shortcuts import render,get_list_or_404,get_object_or_404
 from django.http import Http404
 from utils.receitas.factory import make_produto
 from .models import Receita
@@ -13,7 +15,7 @@ def home(request):
 
 
 def receitas(request,id:int):
-    receita = Receita.objects.filter(id=id,is_published=True).first()
+    receita = get_object_or_404(Receita.objects.filter(id=id,is_published=True))
     is_detalis:Boolean = True
     context={'produto': receita,
               'is_detalis':is_detalis
@@ -23,15 +25,12 @@ def receitas(request,id:int):
                   context=context)
 
 def categorias(request,id):
-    produtos:Optional[Receita] = Receita.objects.filter(category__id=id,is_published=True) # type: ignore
-    
-    if produtos is None:
-        nome_categoria:Optional[str] =produtos.first().category.name  # type: ignore
+    produtos= get_list_or_404(Receita.objects.filter(category__id=id,is_published=True))
+    if produtos is not None:
+        nome_categoria = produtos[0].category
     else:
-        raise Http404('Não encotrada :)')
-
-   
+        nome_categoria =""
     return render(request,'home/categoria.html',context={
         'produtos':produtos,
-        'cat_name':f'{nome_categoria}-categoria'
+        'cat_name':f'{nome_categoria.name}-categoria' # type: ignore
         },)
