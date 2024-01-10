@@ -6,7 +6,11 @@
 {% block content %}
     <div class="main-content main-content-list container">
         {% for produto in  produtos %}
-        {% include 'global/partials/produto.html' %} 
+            {% include 'global/partials/produto.html' %} 
+            {% empty %}
+            <div class="center m-y">
+                <h1>Receitas não encotradas</h1>
+            </div>
         {% endfor %}       
         
     </div>

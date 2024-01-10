@@ -8,9 +8,10 @@ from .models import Receita
 from typing import Optional
 
 def home(request):
-    prosdutos = Receita.objects.filter(is_published=True)
+    produtos= get_list_or_404(Receita.objects.filter(is_published=True).order_by('-id'))
+    
     return render(request,'home/home.html',context={
-        'produtos':prosdutos,
+        'produtos':produtos,
         },)
 
 
