@@ -5,9 +5,13 @@ from django.contrib.auth.models import User
 
 class Categoria(models.Model):
     name = models.CharField(max_length=65)
+    class Meta:
+        verbose_name = 'Categoria' 
+        verbose_name_plural = 'Categorias'
+
     def __str__(self) -> str:
         return self.name
-
+    
 class Receita(models.Model):
     title = models.CharField(max_length=65)
     description = models.CharField(max_length=165)
@@ -24,7 +28,12 @@ class Receita(models.Model):
     cover = models.ImageField(upload_to='produto/covers/%Y/%m/%d/')
     category = models.ForeignKey(Categoria, on_delete=models.SET_NULL, null=True,blank = True,default=None)
     author = models.ForeignKey(User, on_delete=models.SET_NULL, null=True,blank = True,default=None)
-
+    
+    class Meta:
+        verbose_name = 'Receita' 
+        verbose_name_plural = 'Receitas'
+    
     def __str__(self) -> str:
         return self.title
+
 
