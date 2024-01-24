@@ -13,4 +13,3 @@ class ReceitasAdmin(admin.ModelAdmin):
     search_fields = ('title', 'category__nome') 
     list_editable = ('is_published',)
 
-

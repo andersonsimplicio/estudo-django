@@ -6,6 +6,8 @@ from django.http import Http404
 from .models import Receita
 from typing import Optional
 
+
+
 def home(request):
     produtos= get_list_or_404(Receita.objects.filter(is_published=True).order_by('-id'))
    
