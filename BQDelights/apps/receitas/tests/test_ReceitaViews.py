@@ -18,6 +18,7 @@ if not settings.configured:
 # Formas de Executar o teste:
 # python3 manage.py test apps.receitas.tests
 # pytest -rP apps/receitas/tests.py
+# python3 manage.py test apps -v3
 
 class ReceitaViewsTest(TestCase):
     def test_receita_home_is_corretc(self):
