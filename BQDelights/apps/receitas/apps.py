@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class ReceitasConfig(AppConfig):
-    name = 'receitas'
+    name = 'apps.receitas'
     
