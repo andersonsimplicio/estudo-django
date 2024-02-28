@@ -1,9 +1,7 @@
 from django.test import TestCase
 from django.conf import settings
-from django.urls import reverse
-
-
-
+from django.urls import reverse,resolve
+import pytest
 if not settings.configured:
     settings.configure(
         DATABASES={
@@ -12,12 +10,14 @@ if not settings.configured:
                 'NAME': 'db.sqlite3',
             }
         },
-        ROOT_URLCONF='apps.receitas.urls'
+        ROOT_URLCONF='apps.receitas.urls',
+        #urlconf = settings.ROOT_URLCONF if hasattr(settings, 'ROOT_URLCONF') else 'apps.receitas.urls'
     )
-urlconf = settings.ROOT_URLCONF if hasattr(settings, 'ROOT_URLCONF') else 'apps.receitas.urls'
+
 # Formas de Executar o teste:
 # python3 manage.py test apps.receitas.tests
 # pytest -rP apps/receitas/tests.py
+
 
 class RecipeURLsTest(TestCase):
       
@@ -26,9 +26,14 @@ class RecipeURLsTest(TestCase):
         self.assertEqual(url,'/')
 
     def test_categorias_url_is_correct(self):
-        url = reverse('apps.receitas:categorias',kwargs={'id':1})
+        url = reverse('apps.receitas:categorias_list',kwargs={'id':1})
         self.assertEqual(url,'/receitas/categorias/1')
     
     def test_detalhes_url_is_correct(self):
         url = reverse('apps.receitas:detalhes',kwargs={'id':1})
         self.assertEqual(url,'/receitas/1/details')
+
+class ReceitaViewsTest(TestCase):
+    def func_receita_home_is_corretc(self):
+        view = resolve('apps.receitas:home')
+        self.assertTrue(True)

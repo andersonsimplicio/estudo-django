@@ -1,5 +1,5 @@
 from random import randint
-
+'''
 from faker import Faker
 
 
@@ -38,3 +38,4 @@ def make_produto():
 if __name__ == '__main__':
     from pprint import pprint
     pprint(make_produto())
+'''

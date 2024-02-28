@@ -1,10 +1,6 @@
-from tkinter.messagebox import NO
-from unicodedata import category
 from xmlrpc.client import Boolean
 from django.shortcuts import render,get_list_or_404,get_object_or_404
-from django.http import Http404
 from .models import Receita
-from typing import Optional
 
 
 
